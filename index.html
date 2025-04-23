@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Network Graph</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="network-graph"></div>
+    <div class="info-panel" id="infoPanel">
+        <div class="button-wrap">
+            <button id="infoHeader" style="width:100%;">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        style="width: 1em; height: 1em; vertical-align: middle; margin-right: 0.5em;">
+                        <path
+                            d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11 7H13V9H11V7ZM11 11H13V17H11V11Z">
+                        </path>
+                    </svg>
+                    Info
+                </span>
+            </button>
+            <div class="button-shadow"></div>
+        </div>
+        <div class="info-content" id="infoContent">
+            <p>Les fiches des personnages sont disponibles au clic.</p>
+            <p><a
+                    href="https://docs.google.com/spreadsheets/d/1sILtcCOVsi4zVlKs6fb9z9qv0G7VYu-jLkpjx9wHVJM/edit?usp=sharing">Le
+                    lien du GSheets pour entrer vos liens</a></p>
+            <p>Et évidemment crédits à cet incroyable <a href="https://7goldenrings.forumactif.com">forum</a>.</p>
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="color-box" style="background-color: #D92062;"></div>
+                    <span>Amour</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box" style="background-color: #3D8113;"></div>
+                    <span>Amitié</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box" style="background-color: #20D9C3;"></div>
+                    <span>Connaissance Positive</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box" style="background-color: #2096D9;"></div>
+                    <span>Connaissance Neutre</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box" style="background-color: #5020D9;"></div>
+                    <span>Connaissance Négative</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box" style="background-color: #B22727;"></div>
+                    <span>Ennemi</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box" style="background-color: #000000;"></div>
+                    <span>Némésis</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box" style="background-color: #D9A520;"></div>
+                    <span>Famille</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box" style="background-color: #862ACE;"></div>
+                    <span>Rival</span>
+                </div>
+                <div class="legend-item">
+                    <div class="color-box" style="background-color: #D96E20;"></div>
+                    <span>Compliqué</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
